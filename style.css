@@ -1,0 +1,810 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    display: flex;
+    background-color: darkslategrey;
+    height: 70px;
+    padding-top: 30px;
+    color: white;
+    font-family: monospace;
+    padding-left: 50px;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding-left: 220px;
+    padding-top: 15px;
+
+}
+
+.menu1{
+    display: none;
+}
+
+.header ul li:hover {
+    color: orangered;
+    cursor: pointer;
+    animation: list 2s;
+}
+
+@keyframes list {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.header button {
+    width: 125px;
+    height: 40px;
+
+    background-color: orangered;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin-left: 30px;
+    animation: button 1s;
+}
+
+@keyframes button {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.header img {
+    height: 45px;
+    width: 55px;
+    padding-left: px;
+}
+
+.header h5 {
+    padding-top: 10px;
+
+}
+
+.header h1 {
+
+    padding-left: 20px;
+    padding-top: 5px;
+
+}
+
+.image {
+    background-image: url("https://i.pinimg.com/1200x/41/e1/63/41e163fbb3bf7fa6c977db557a0fadc8.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.text {
+    padding: 68px;
+    color: white;
+    font-family: sans-serif;
+    animation: text 1s;
+}
+
+@keyframes text {
+    from {
+        transform: translate(-700px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+
+.text h4 {
+    background-color: orangered;
+    width: 100px;
+    font-size: 8px;
+    padding-left: 13px;
+    height: 15px;
+    padding-top: 6px;
+    border-radius: 6px;
+    font-weight: lighter;
+
+}
+
+.text h1 {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.text p {
+    padding-top: 15px;
+    font-size: 10px;
+    color: rgb(184, 184, 184);
+}
+
+.text button {
+    margin-top: 20px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: 9px;
+    border-radius: 13px;
+
+}
+
+.flex {
+    display: flex;
+    
+    margin-left: 30px;
+    gap: 118px;
+    margin-top: 10px;
+}
+
+.hero h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-family: sans-serif;
+}
+
+.hero {
+
+    animation: hero 2s;
+
+}
+
+@keyframes hero {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.icon p {
+    color: gray;
+    font-size: 10px;
+    margin-left: 75px;
+    margin-top: 3px;
+
+}
+
+.icon h2 {
+    padding-left: 50px;
+    font-size: 20px;
+
+}
+
+.icon {
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.image1 img {
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+
+}
+
+
+.image1 {
+    animation: image1 3s;
+
+
+}
+
+
+@keyframes image1 {
+    from {
+        transform: translate(-700px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+
+.big-text {
+    animation: bigtext 3s;
+}
+
+@keyframes bigtext {
+    from {
+        transform: translate(400px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+.image1 h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.image1 p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.third {
+    display: flex;
+    gap: 90px;
+    margin-top: 130px;
+    margin-left: 100px;
+}
+
+.flex1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+}
+
+.text2 {
+    margin-top: 70px;
+}
+
+.title p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.title h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.hr {
+    width: 40px;
+    border: 1px solid black;
+    margin-top: 10px;
+
+}
+
+.text2 {
+    margin-top: 30px;
+}
+
+.text2 h1 {
+    color: orangered;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+.text2 h2 {
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.text2 p {
+    font-size: 10px;
+    color: gray;
+
+}
+
+
+.flex2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 60px;
+    margin-top: 60px;
+    background-color: darkslategrey;
+    color: white;
+    height: 58px;
+    margin-left: 100px;
+    width: 75%;
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-size: 9px;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: absolute;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
+
+
+.flex2 h3 {
+    font-size: 8px;
+    padding-top: 5px;
+}
+
+.icon2 h1 {
+    font-size: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+    background-color: orangered;
+    height: 25px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.flex2 h3 {
+    padding-left: 10px;
+    padding-top: 14px;
+    font-weight: lighter;
+}
+
+
+.fa-list-check {
+    padding-top: 14px;
+}
+
+.flex2 p {
+    padding-left: 10px;
+    padding-top: 14px;
+    font-weight: lighter;
+}
+
+
+.flex2 h4 {
+    padding-left: 10px;
+    padding-top: 14px;
+    font-weight: lighter;
+}
+
+
+.icon3 {
+    padding-left: 10px;
+    padding-top: 14px;
+    font-weight: lighter;
+}
+
+
+.bac {
+    display: flex;
+    background-color: black;
+    height: 280px;
+    padding-top: 100px;
+    color: white;
+    gap: 130px;
+    margin-top: 100px;
+
+
+}
+
+
+
+.bac img {
+    height: 230px;
+    width: 250px;
+}
+
+
+
+.more h1 {
+    font-size: 32px;
+    font-family: sans-serif;
+}
+
+.more p {
+    font-size: 10px;
+    color: gray;
+    padding-top: 10px;
+}
+
+.label input {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: gray;
+
+}
+
+.label button {
+    background-color: orangered;
+    border: none;
+    color: white;
+    width: 162px;
+    height: 30px;
+    font-size: 10px;
+    padding-right: 4px;
+    border-radius: 7px;
+}
+
+.footer {
+    display: flex;
+    background-color: darkslategrey;
+    height: 70px;
+    gap: 60px;
+    padding-top: 50px;
+    color: white;
+    font-family: monospace;
+    padding-left: 80px;
+    font-size: 8px;
+
+}
+
+.footer input {
+    background-color: white;
+    border: none;
+    color: gray;
+    height: 30px;
+    font-size: 10px;
+    font-family: sans-serif;
+    padding-left: 50px;
+    width: 60px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-Right-radius: 5px;
+    border-bottom-Right-radius: 5px;
+
+}
+
+.footer button {
+    background-color: orangered;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-Right-radius: 2.5px;
+    border-bottom-Right-radius: 2.5px;
+
+}
+
+.footer h3 {
+    padding-top: 13px;
+}
+
+.social {
+    color: orangered;
+    padding-top: 13px;
+}
+
+.names {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 13px;
+}
+
+.end {
+    font-size: 7px;
+    padding-top: 11px;
+}
+
+.tasty {
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+
+.tasty p {
+    font-size: 10px;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 430px;
+}
+
+.food1 button {
+    background-color: orangered;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: 9px;
+    border-radius: 13px;
+
+
+}
+
+.next {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 470px;
+}
+
+.all-foods {
+    display: flex;
+    gap: 7px;
+    margin-left: 340px;
+    margin-top: 20px;
+}
+
+
+
+.food2 button {
+    background-color: white;
+    border: none;
+    color: black;
+    width: 80px;
+    height: 30px;
+    font-size: 9px;
+    border-radius: 13px;
+    border: 0.5px solid gray;
+
+}
+
+.food2 button:hover{
+    background-color: orangered;
+    cursor: pointer;
+    animation: food2 1s;
+    color: white;
+}
+
+
+@keyframes food2{
+    from{
+        transform: scale(0.5);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+.fa-heart {
+    color: gray;
+    padding-left: 170px;
+
+}
+
+.flex4 img {
+    height: 120px;
+    width: 140px;
+    padding-left: 30px;
+
+}
+
+
+.flex4 img:hover {
+    animation: sawir 1s;
+
+
+}
+
+
+@keyframes sawir{
+    from{
+        transform: scale(0.5);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+.flex4 {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid gray;
+    width: 200px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    margin-left: 72px;
+    margin-top: 30px;
+    height: 340px;
+    box-shadow: 2px 2px 10px gray;
+
+}
+
+
+.stars {
+    color: yellow;
+    padding-left: 50px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.fa-heart {
+    color: gray;
+    padding-left: 170px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.fa-eye {
+    color: gray;
+    font-size: 15px;
+}
+
+
+.view button {
+    background-color: white;
+    border: none;
+    color: black;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    border-radius: 13px;
+    border: 0.5px solid gray;
+    font-family: sans-serif;
+    font-weight: bolder;
+
+}
+
+.fa-calendar-check {
+    color: black;
+    font-size: 12px;
+}
+
+.view {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.box h3 {
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.discount1 {
+    font-size: 12px;
+    color: gray;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.red {
+    color: orangered;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+
+.colom {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    margin-left: 50px;
+}
+
+
+.load button {
+    background-color: orangered;
+    border: none;
+    color: white;
+    width: 140px;
+    height: 40px;
+    font-size: 10px;
+    border-radius: 15px;
+    margin-left: 560px;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+
+}
+
+
+@media (max-width: 760px){
+
+    .header{
+        flex-direction: column;
+        height: 170px;
+    
+    }
+
+    .header ul{
+        flex-direction: column;
+        padding-left: 130px;
+        padding-top: 30px;
+        gap: 20px;
+        display: none;
+    }
+
+    .menu1{
+
+        display: block;
+        position: absolute;
+        left: 330px;
+        top: 120px;
+        
+    }
+
+    .header button{
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+
+    .header h1{
+        padding-left: 0px;
+    }
+
+    .flex{
+        flex-direction: column;
+        font-size: 10px;
+        gap: 30px;
+        margin-left: 70px;
+    }
+
+    .third{
+        flex-direction: column;
+        margin-left: 70px;
+    }
+
+    .image1 h1{
+        margin-left: 28px;
+        font-size: 20px;
+    }
+
+     .image1 p{
+        margin-left: 45px;
+    }
+
+    .flex2{
+        flex-direction: column;
+        height: auto;
+        margin-left: 0px;
+        gap: 10px;
+        font-size: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: auto;
+        padding-top: 5px;
+    }
+    
+    .flex2 h3{
+        padding-top: 2px;
+    }
+
+    .bac{
+        flex-direction: column;
+        height: 900px;
+        padding-left: 0px;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    .footer{
+        flex-direction: column;
+        height: 400px;
+        padding-left: 0px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer input{
+        margin-top: 23px;
+    }
+
+     .footer button{
+        margin-top: 20px;
+    }
+
+    .names{
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 20px;
+    }
+
+    .end{
+        margin-top: 20px;
+    }
+}
