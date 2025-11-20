@@ -16,42 +16,38 @@
 .header ul {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 60px;
     padding-left: 220px;
     padding-top: 15px;
+    color: white;
+    
 
+}
+
+.header ul a{
+    text-decoration: none;
+    color: white;
 }
 
 .menu1{
     display: none;
 }
 
-.header ul li:hover {
-    color: orangered;
-    cursor: pointer;
-    animation: list 2s;
-}
 
-@keyframes list {
-    from {
-        transform: scale(0.5);
-    }
 
-    to {
-        transform: scale(1);
-    }
-}
 
 .header button {
     width: 125px;
     height: 40px;
-
     background-color: orangered;
-    color: whitesmoke;
+    color: white;
     border: none;
     border-radius: 5px;
-    margin-left: 30px;
     animation: button 1s;
+    position: absolute;
+    top: 35px;
+    left: 1070px;
+    
 }
 
 @keyframes button {
@@ -546,21 +542,8 @@
 .food2 button:hover{
     background-color: orangered;
     cursor: pointer;
-    animation: food2 1s;
     color: white;
 }
-
-
-@keyframes food2{
-    from{
-        transform: scale(0.5);
-    }
-
-    to{
-        transform: scale(1);
-    }
-}
-
 .fa-heart {
     color: gray;
     padding-left: 170px;
@@ -575,22 +558,6 @@
 }
 
 
-.flex4 img:hover {
-    animation: sawir 1s;
-
-
-}
-
-
-@keyframes sawir{
-    from{
-        transform: scale(0.5);
-    }
-
-    to{
-        transform: scale(1);
-    }
-}
 
 .flex4 {
     background-color: white;
