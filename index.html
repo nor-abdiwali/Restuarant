@@ -1,214 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restuarant</title>
+    <title>PedroNeto - Modern Restaurant</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
- 
     <div class="header">
-        <img src="./7a40d04550bd2856ea3365e1b518b34751dc11d4.png" alt="">
-    
-        <h5>Mogadishu<br> Restuarant</h5>
-        <h1>PedroNeto</h1>
+        <div class="logo-container">
+            <div class="logo-text">Pedro<span>Neto</span></div>
+        </div>
 
-        <div class="menu1"><i class="fa-solid fa-bars"></i></div>
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="oderfood.html">Order Food</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <button>Order now</button>
-        </ul>
+        <div class="menu-toggle"><i class="fa-solid fa-bars-staggered"></i></div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-
-
     </div>
 
-
-    <div class="image">
-        <div class="text">
-        <h4>Reserverkart & Cullieary</h4>
-        <h1>Apamess entant <br> Upscake Dining</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Deserunt, alias architecto <br> reprehenderit rem excepturi possimus iure
-              debitis expedita aperiam et!</p>
-              <button>Buy Now</button>
-        </div>
-    </div>
-
-    <div class="hero">
-        <h1>Fickal Excellence</h1>
-
-        <div class="flex">
-
-        <div class="icon">
-            <h2><i style="color: orangered;" class="fa-solid fa-stroopwafel"></i>Peedk'art</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-
+    <!-- Home Section -->
+    <section id="home">
+        <div class="image">
+            <div class="text" data-aos="fade-up">
+                <h4>Reserverkart & Cullieary</h4>
+                <h1>Apamess entant <br> Upscake Dining</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt, alias architecto <br> reprehenderit rem excepturi possimus iure
+                    debitis expedita aperiam et!</p>
+                <button onclick="window.location.href='#menu'">Buy Now</button>
+            </div>
         </div>
 
-         <div class="icon">
-            <h2><i style="color: orangered;" class="fa-solid fa-cookie"></i>Reseverkat</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-
+        <div class="hero">
+            <h1 data-aos="fade-down">Fickal Excellence</h1>
+            <div class="flex">
+                <div class="icon" data-aos="zoom-in" data-aos-delay="100">
+                    <h2><i style="color: orangered;" class="fa-solid fa-stroopwafel"></i>Peedk'art</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="icon" data-aos="zoom-in" data-aos-delay="200">
+                    <h2><i style="color: orangered;" class="fa-solid fa-cookie"></i>Reseverkat</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="icon" data-aos="zoom-in" data-aos-delay="300">
+                    <h2><i style="color: orangered;" class="fa-solid fa-lemon"></i>Lamt Chops</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="icon" data-aos="zoom-in" data-aos-delay="400">
+                    <h2><i style="color: orangered;" class="fa-brands fa-first-order"></i>Order Online</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
         </div>
 
-         <div class="icon">
-            <h2><i style="color: orangered;" class="fa-solid fa-lemon"></i>Lamt Chops</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-
+        <!-- Restored Home Sections -->
+        <div class="third" data-aos="fade-up">
+            <div class="image1" data-aos="fade-right">
+                <img src="https://i.pinimg.com/1200x/b7/0f/fc/b70ffcf7172d9e76492e60bb030f5054.jpg" alt="">
+                <h1>Cullieary Excellence</h1>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit</p>
+            </div>
+            <div class="image1" data-aos="fade-up">
+                <img src="https://i.pinimg.com/736x/62/29/cf/6229cf43bc8f1dad1b1be07c456f871d.jpg" alt="">
+                <h1>Cullieary Excellence</h1>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit</p>
+            </div>
+            <div class="big-text" data-aos="fade-left">
+                <div class="title">
+                    <p>Lorem</p>
+                    <h1>Menu Preview</h1>
+                    <hr class="hr">
+                    <div class="text2">
+                        <h1>Good Dinner</h1>
+                        <div class="flex1">
+                            <h2 style="font-size: 12px;">Enjoy & Well</h2>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="text2">
+                        <h1>Good Break-fast</h1>
+                        <div class="flex1">
+                            <h2 style="font-size: 12px;">Enjoy & Well</h2>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="text2">
+                        <h1>Good Lunch</h1>
+                        <div class="flex1">
+                            <h2 style="font-size: 12px;">Enjoy & Well</h2>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
-         <div class="icon">
-            <h2><i style="color: orangered;" class="fa-brands fa-first-order"></i>Order Online</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-
+        <div class="flex2" data-aos="fade-up">
+            <h3 style="font-size: 7px;"><i style="color: white;" class="fa-solid fa-calendar-check"></i>&nbsp; Mogadishu
+                Restuarant</h3>
+            <i style="color: orangered;" class="fa-solid fa-list-check"></i>
+            <p><i class="fa-solid fa-bridge-circle-check"></i>Restuarant</p>
+            <div class="icon2">
+                <h1><i class="fa-solid fa-chess-bishop"></i></h1>
+            </div>
+            <h4><i class="fa-solid fa-play"></i>Our best Restuarant</h4>
+            <div class="icon3">
+                <i class="fa-solid fa-compact-disc"></i>
+                <i class="fa-solid fa-compact-disc"></i>
+                <i class="fa-solid fa-compact-disc"></i>
+            </div>
         </div>
 
-    </div>
-    </div>
-
-    <div class="third">
-
-        <div class="image1">
-        <img src="https://i.pinimg.com/1200x/b7/0f/fc/b70ffcf7172d9e76492e60bb030f5054.jpg" alt="">
-        <h1>Cullieary Excellence</h1>
-        <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit</p>
-        </div>
-
-        <div class="image1">
-        <img src="https://i.pinimg.com/736x/62/29/cf/6229cf43bc8f1dad1b1be07c456f871d.jpg" alt="">
-        <h1>Cullieary Excellence</h1>
-        <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit</p>
-        </div>
-
-        <div class="big-text">
-
-            <div class="title">
-                <p>Lorem</p>
+        <div class="bac" data-aos="fade-up">
+            <img class="image9" src="https://i.pinimg.com/1200x/c8/11/e1/c811e16e296b7830943b90943a3d5c51.jpg" alt=""
+                data-aos="fade-right">
+            <div class="more" data-aos="fade-up">
                 <h1>Menu Preview</h1>
-                <hr class="hr">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit.
+                    Tenetur est fuga ad debitis omnis nobis officiis <br> obcaecati a,
+                    aliquid quasi quod quisquam reiciendis <br> expedita
+                    fugiat, dicta excepturi! Excepturi. Lorem <br>
+                    ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                    Quaerat aliquam reprehenderit incidunt Quaerat</p>
+            </div>
+            <div class="label" data-aos="fade-left">
+                <input type="text" placeholder="Name"> <br><br>
+                <input type="email" placeholder="Email"><br><br>
+                <input type="password" placeholder="Password"><br><br>
+                <button>Sumbit</button>
+            </div>
+            <img class="image10" src="https://i.pinimg.com/736x/c0/a9/29/c0a929dc3350f8333a238a695e372bdc.jpg" alt=""
+                data-aos="fade-left">
+        </div>
+    </section>
 
-                <div class="text2">
-                    <h1>Good Dinner</h1>
-                    <div class="flex1">
-                    <h2 style="font-size: 12px;">Enjoy & Well</h2>
-                   
-                   <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-hero" data-aos="fade-in">
+            <div class="about-text" data-aos="fade-up">
+                <h4>Our Story</h4>
+                <h1>Tradition & <br> Modern Taste</h1>
+                <p>Experience the finest culinary journey in Mogadishu.</p>
+            </div>
+        </div>
 
+        <div class="about-content">
+            <div class="story-section">
+                <div class="story-image" data-aos="fade-right">
+                    <img src="https://i.pinimg.com/1200x/b7/0f/fc/b70ffcf7172d9e76492e60bb030f5054.jpg"
+                        alt="Chef cooking">
                 </div>
-
-
-                 <div class="text2">
-                    <h1>Good Break-fast</h1>
-                    <div class="flex1">
-                    <h2 style="font-size: 12px;">Enjoy & Well</h2>
-                   
-                   <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-
+                <div class="story-text" data-aos="fade-left">
+                    <h2>Our Journey</h2>
+                    <p>Welcome to Mogadishu Restaurant, where tradition meets modern culinary excellence. Established
+                        with a
+                        passion for authentic flavors, we bring you dishes that tell a story of heritage and innovation.
+                    </p>
+                    <p>Our chefs are dedicated to sourcing the freshest local ingredients to create meals that not only
+                        taste amazing but also warm the soul.</p>
+                    <button onclick="window.location.href='#menu'">View Menu</button>
                 </div>
-
-
-                 <div class="text2">
-                    <h1>Good Lunch</h1>
-                    <div class="flex1">
-                    <h2 style="font-size: 12px;">Enjoy & Well</h2>
-                   
-                   <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-
-                </div>
-
             </div>
 
-
-        </div>
-
-    </div>
-
-
-    <div class="flex2">
-
-        <h3 style="font-size: 7px;"><i style="color: white;" class="fa-solid fa-calendar-check"></i>&nbsp; Mogadishu Restuarant</h3>
-        <i style="color: orangered;" class="fa-solid fa-list-check"></i>
-        <p><i class="fa-solid fa-bridge-circle-check"></i>Restuarant</p>
-        <div class="icon2">
-            <h1>
-        <i class="fa-solid fa-chess-bishop"></i>
-            </h1>
-        </div>
-        <h4><i class="fa-solid fa-play"></i>Our best Restuarant</h4>
-        <div class="icon3">
-        <i class="fa-solid fa-compact-disc"></i>
-        <i class="fa-solid fa-compact-disc"></i>
-        <i class="fa-solid fa-compact-disc"></i>
-        </div>
-
-    </div>
-
-    <div class="bac">
-        <img class="image9" src="https://i.pinimg.com/1200x/c8/11/e1/c811e16e296b7830943b90943a3d5c51.jpg" alt="">
-
-        <div class="more">
-            <h1>Menu Preview</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. 
-                Tenetur est fuga ad debitis omnis nobis officiis <br> obcaecati a, 
-                aliquid quasi quod quisquam reiciendis <br> expedita 
-                fugiat, dicta excepturi! Excepturi. Lorem <br>
-                 ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                  Quaerat aliquam reprehenderit incidunt Quaerat</p>
-        </div>
-
-        <div class="label">
-            <input type="text" placeholder="Name"> <br>
-              <br>
-            <input type="email" placeholder="Email"><br>
-<br>
-            <input type="password" placeholder="Password"><br>
-            
-            <br>
-            <button>Sumbit</button>
-
-        </div>
-
-        <img class="image10" src="https://i.pinimg.com/736x/c0/a9/29/c0a929dc3350f8333a238a695e372bdc.jpg" alt="">
-
-    </div>
-
-    <footer class="footer">
-        <h3>Mogadishu Restuarant</h3>
-           <div class="names">
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>Instagram</p>
-        </div>
-
-
-            <div class="social">
-                &nbsp; &nbsp; &nbsp; &nbsp;
-                <i class="fa-brands fa-facebook-f"></i>
-               &nbsp; <i class="fa-brands fa-twitter"></i>
-               &nbsp; <i class="fa-brands fa-instagram"></i>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h3>Fresh Food</h3>
+                    <p>We use only the best ingredients.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Hot and fresh to your doorstep.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Made with Love</h3>
+                    <p>Passion in every dish we serve.</p>
+                </div>
             </div>
 
-            <input type="email"  placeholder="Email">
-            <button>Send</button>
+            <div class="section-title" data-aos="fade-up">
+                <h4>Our Team</h4>
+                <h1>Meet Our Chefs</h1>
+            </div>
 
-            <p class="end">Copyright &copy; 2024 PedroNeto. All rights reserved.</p>
-        
+            <div class="chefs-grid">
+                <div class="chef-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1583394293214-28dea15ee548?q=80&w=2070&auto=format&fit=crop"
+                        alt="Ahmed Nur">
+                    <h3>Ahmed Nur</h3>
+                    <p>Executive Chef</p>
+                </div>
+                <div class="chef-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2074&auto=format&fit=crop"
+                        alt="Sarah Hassan">
+                    <h3>Sarah Hassan</h3>
+                    <p>Pastry Chef</p>
+                </div>
+                <div class="chef-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop"
+                        alt="Omar Ali">
+                    <h3>Omar Ali</h3>
+                    <p>Sous Chef</p>
+                </div>
+            </div>
+
+            <div class="testimonials-section">
+                <div class="section-title" data-aos="fade-up">
+                    <h4>Testimonials</h4>
+                    <h1>What Customers Say</h1>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" data-aos="fade-right">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>"The best restaurant in Mogadishu! The food is absolutely delicious and the service is
+                            top-notch."</p>
+                        <h3>Fatima Abdi</h3>
+                        <div class="starts">★★★★★</div>
+                    </div>
+                    <div class="testimonial-card" data-aos="fade-left">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>"I love the atmosphere here. It's the perfect place to enjoy a meal with family and friends."
+                        </p>
+                        <h3>Mohamed Farah</h3>
+                        <div class="starts">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="tasty" data-aos="fade-up">
+            <div class="next">
+                <h1>Our Tasty Foods</h1>
+                <h1 style="color: orangered;">Foods</h1>
+            </div>
+            <p>Experience our wide variety of dishes, from traditional favorites to modern delights.</p>
+        </div>
+
+        <div class="colom">
+            <!-- Reuse colom content from oderfood.html -->
+            <div class="flex4" data-aos="zoom-in">
+                <i class="fa-solid fa-heart"></i>
+                <div class="box">
+                    <img src="https://i.pinimg.com/1200x/e2/63/e5/e263e50bc39528becbd777a271e297af.jpg" alt="">
+                    <p class="stars">★★★★★</p>
+                    <h3>Spicy Burger</h3>
+                    <p class="red">$5.99</p>
+                    <div class="view">
+                        <i class="fa-solid fa-eye"></i>
+                        <button><i class="fa-solid fa-calendar-check"></i>&nbsp; &nbsp;Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex4" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-heart"></i>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/fc/c2/55/fcc2555f7387cd9f32568f32581baabc.jpg" alt="">
+                    <p class="stars">★★★★★</p>
+                    <h3>Pasta Delight</h3>
+                    <p class="red">$5.99</p>
+                    <div class="view">
+                        <i class="fa-solid fa-eye"></i>
+                        <button><i class="fa-solid fa-calendar-check"></i>&nbsp; &nbsp;Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex4" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fa-solid fa-heart"></i>
+                <div class="box">
+                    <img src="https://i.pinimg.com/1200x/1d/fc/fe/1dfcfeefc95f069bd0996c163ab17821.jpg" alt="">
+                    <p class="stars">★★★★★</p>
+                    <h3>Fresh Sandwich</h3>
+                    <p class="red">$5.99</p>
+                    <div class="view">
+                        <i class="fa-solid fa-eye"></i>
+                        <button><i class="fa-solid fa-calendar-check"></i>&nbsp; &nbsp;Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex4" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fa-solid fa-heart"></i>
+                <div class="box">
+                    <img src="https://i.pinimg.com/1200x/20/8f/0d/208f0d9b40f95ea543036223cc3f843f.jpg" alt="">
+                    <p class="stars">★★★★★</p>
+                    <h3>Cold Drinks</h3>
+                    <p class="red">$5.99</p>
+                    <div class="view">
+                        <i class="fa-solid fa-eye"></i>
+                        <button><i class="fa-solid fa-calendar-check"></i>&nbsp; &nbsp;Buy</button>
+                    </div>
+                </div>
+            </div>
+            <!-- More items can be added here -->
+        </div>
+
+        <div class="load" data-aos="fade-up">
+            <button onclick="window.location.href='oderfood.html'">View Full Menu</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-hero" data-aos="fade-in">
+            <div class="contact-text" data-aos="fade-up">
+                <h4>Get in Touch</h4>
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Here's how you can reach us.</p>
+            </div>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Boondhere, Mogadishu, Somalia</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+252 61 705 5988</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>nnuurcabdiwali@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <h2>Send us a Message</h2>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals & Form (Global) -->
+    <div id="food-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-img" src="" alt="Food Image">
+            <h2 id="modal-title">Food Name</h2>
+            <p id="modal-desc">Delicious description of the food item goes here.</p>
+            <p id="modal-price" class="red">$5.99</p>
+            <button onclick="openBuyForm()">Buy</button>
+        </div>
+    </div>
+
+    <div id="buy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-buy-modal" onclick="closeBuyModal()">&times;</span>
+            <h2>Complete Your Order</h2>
+            <p id="buy-item-name" style="font-weight: bold; color: orangered; margin-bottom: 20px;">Food Name</p>
+            <form id="checkout-form" onsubmit="handlePurchase(event)">
+                <div class="input-group">
+                    <input type="text" id="cust-name" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="cust-phone" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="cust-address" placeholder="Delivery Address" required>
+                </div>
+                <div class="input-group">
+                    <select id="cust-payment">
+                        <option value="cash">Cash on Delivery</option>
+                        <option value="zaad">Zaad Service</option>
+                        <option value="e-dahab">E-Dahab</option>
+                    </select>
+                </div>
+                <button type="submit" class="buy-btn">Confirm Purchase</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="toast">Item added to cart!</div>
+
+    <footer class="footer-modern">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo-text">Pedro<span>Neto</span></div>
+                <p>Mogadishu Restaurant offers an unforgettable dining experience with authentic flavors and modern
+                    cuisine.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1B6hgEn1jL/" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/pubgneto277242" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.snapchat.com/add/chris_bro7?share_id=RIsT84aIQLo&locale=en-GB"
+                        target="_blank"><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li><a href="#">Boondhere, Mogadishu</a></li>
+                    <li><a href="#">+252 61 705 5988</a></li>
+                    <li><a href="#">nnuurcabdiwali@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PedroNeto. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="main.js"></script>
+    <!-- Food Interactivity Script -->
+    <script>
+        const modal = document.getElementById("food-modal");
+        const buyModal = document.getElementById("buy-modal");
+        const closeModal = document.querySelector(".close-modal");
+        let currentItem = "";
+
+        function viewDetails(name, price, img, desc) {
+            currentItem = name;
+            document.getElementById("modal-title").innerText = name;
+            document.getElementById("modal-price").innerText = price;
+            document.getElementById("modal-img").src = img;
+            document.getElementById("modal-desc").innerText = desc || "A delicious meal prepared with fresh ingredients.";
+            modal.style.display = "block";
+        }
+
+        function openBuyForm(name) {
+            if (!name) name = currentItem;
+            document.getElementById("buy-item-name").innerText = name;
+            modal.style.display = "none";
+            buyModal.style.display = "block";
+        }
+
+        function closeBuyModal() {
+            buyModal.style.display = "none";
+        }
+
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) modal.style.display = "none";
+            if (event.target == buyModal) buyModal.style.display = "none";
+        }
+
+        function handlePurchase(event) {
+            event.preventDefault();
+            const nameValue = document.getElementById("cust-name").value;
+            const toast = document.getElementById("toast");
+            toast.innerText = "Mahadsanid " + nameValue + "! Order-kaaga waa la helay.";
+            toast.className = "show";
+            setTimeout(function () { toast.className = toast.className.replace("show", ""); }, 4000);
+            buyModal.style.display = "none";
+            document.getElementById("checkout-form").reset();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const foodItems = document.querySelectorAll('.flex4');
+            foodItems.forEach(item => {
+                const img = item.querySelector('img') ? item.querySelector('img').src : '';
+                const name = item.querySelector('h3') ? item.querySelector('h3').innerText.trim() : 'Food Item';
+                const price = item.querySelector('.red') ? item.querySelector('.red').innerText.trim() : '$5.99';
+
+                const eyeIcon = item.querySelector('.fa-eye');
+                if (eyeIcon) {
+                    eyeIcon.onclick = () => viewDetails(name, price, img, "Prepared with authentic flavors.");
+                }
+
+                const buyBtn = item.querySelector('.view button');
+                if (buyBtn) {
+                    buyBtn.onclick = () => openBuyForm(name);
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

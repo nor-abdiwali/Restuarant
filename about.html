@@ -1,106 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restuarant</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-
- 
     <div class="header">
-        <img src="./7a40d04550bd2856ea3365e1b518b34751dc11d4.png" alt="">
-    
-        <h5>Mogadishu<br> Restuarant</h5>
-        <h1>PedroNeto</h1>
+        <div class="logo-container">
+            <div class="logo-text">Pedro<span>Neto</span></div>
+        </div>
 
-        <div class="menu1"><i class="fa-solid fa-bars"></i></div>
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="oderfood.html">Order Food</a></li>
-             <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <button>Order now</button>
-        </ul>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="oderfood.html">Menu</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
 
 
     </div>
 
-
-    <div class="flex2">
-
-        <h3 style="font-size: 7px;"><i style="color: white;" class="fa-solid fa-calendar-check"></i>&nbsp; Mogadishu Restuarant</h3>
-        <i style="color: orangered;" class="fa-solid fa-list-check"></i>
-        <p><i class="fa-solid fa-bridge-circle-check"></i>Restuarant</p>
-        <div class="icon2">
-            <h1>
-        <i class="fa-solid fa-chess-bishop"></i>
-            </h1>
+    <!-- Hero Section for About Page -->
+    <div class="about-hero">
+        <div class="about-text">
+            <h4>Our Story</h4>
+            <h1>Tradition & <br> Modern Taste</h1>
+            <p>Experience the finest culinary journey in Mogadishu.</p>
         </div>
-        <h4><i class="fa-solid fa-play"></i>Our best Restuarant</h4>
-        <div class="icon3">
-        <i class="fa-solid fa-compact-disc"></i>
-        <i class="fa-solid fa-compact-disc"></i>
-        <i class="fa-solid fa-compact-disc"></i>
-        </div>
-
     </div>
 
-    <div class="bac">
-        <img class="image9" src="https://i.pinimg.com/1200x/c8/11/e1/c811e16e296b7830943b90943a3d5c51.jpg" alt="">
-
-        <div class="more">
-            <h1>Menu Preview</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. 
-                Tenetur est fuga ad debitis omnis nobis officiis <br> obcaecati a, 
-                aliquid quasi quod quisquam reiciendis <br> expedita 
-                fugiat, dicta excepturi! Excepturi. Lorem <br>
-                 ipsum dolor sit, amet consectetur adipisicing elit. <br>
-                  Quaerat aliquam reprehenderit incidunt Quaerat</p>
+    <!-- Main Content -->
+    <div class="about-content">
+        <div class="story-section">
+            <div class="story-image">
+                <img src="https://i.pinimg.com/1200x/b7/0f/fc/b70ffcf7172d9e76492e60bb030f5054.jpg" alt="Chef cooking">
+            </div>
+            <div class="story-text">
+                <h2>Our Journey</h2>
+                <p>Welcome to Mogadishu Restaurant, where tradition meets modern culinary excellence. Established with a
+                    passion for authentic flavors, we bring you dishes that tell a story of heritage and innovation.</p>
+                <p>Our chefs are dedicated to sourcing the freshest local ingredients to create meals that not only
+                    taste amazing but also warm the soul.</p>
+                <button>View Menu</button>
+            </div>
         </div>
 
-        <div class="label">
-            <input type="text" placeholder="Name"> <br>
-              <br>
-            <input type="email" placeholder="Email"><br>
-<br>
-            <input type="password" placeholder="Password"><br>
-            
-            <br>
-            <button>Sumbit</button>
-
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Fresh Food</h3>
+                <p>We use only the best ingredients.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Fast Delivery</h3>
+                <p>Hot and fresh to your doorstep.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Made with Love</h3>
+                <p>Passion in every dish we serve.</p>
+            </div>
         </div>
 
-        <img class="image10" src="https://i.pinimg.com/736x/c0/a9/29/c0a929dc3350f8333a238a695e372bdc.jpg" alt="">
+        <!-- Chefs Section -->
+        <div class="section-title">
+            <h4>Our Team</h4>
+            <h1>Meet Our Chefs</h1>
+        </div>
 
+        <div class="chefs-grid">
+    <div class="chef-card">
+                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop"
+                    alt="Omar Ali">
+                <h3>Omar Ali</h3>
+                <p>Sous Chef</p>
+                <div class="chef-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="chef-card">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2074&auto=format&fit=crop"
+                    alt="Sarah Hassan">
+                <h3>Sarah Hassan</h3>
+                <p>Pastry Chef</p>
+                <div class="chef-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="chef-card">
+                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=2070&auto=format&fit=crop"
+                    alt="Omar Ali">
+                <h3>Omar Ali</h3>
+                <p>Sous Chef</p>
+                <div class="chef-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials-section">
+            <div class="section-title">
+                <h4>Testimonials</h4>
+                <h1>What Customers Say</h1>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"The best restaurant in Mogadishu! The food is absolutely delicious and the service is
+                        top-notch."</p>
+                    <h3>Fatima Abdi</h3>
+                    <div class="starts">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"I love the atmosphere here. It's the perfect place to enjoy a meal with family and friends."</p>
+                    <h3>Mohamed Farah</h3>
+                    <div class="starts">★★★★★</div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer">
-        <h3>Mogadishu Restuarant</h3>
-           <div class="names">
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>Instagram</p>
-        </div>
-
-
-            <div class="social">
-                &nbsp; &nbsp; &nbsp; &nbsp;
-                <i class="fa-brands fa-facebook-f"></i>
-               &nbsp; <i class="fa-brands fa-twitter"></i>
-               &nbsp; <i class="fa-brands fa-instagram"></i>
+    <footer class="footer-modern">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo-text">Pedro<span>Neto</span></div>
+                <p>Mogadishu Restaurant offers an unforgettable dining experience with authentic flavors and modern
+                    cuisine.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
 
-            <input type="email"  placeholder="Email">
-            <button>Send</button>
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="oderfood.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
 
-            <p class="end">Copyright &copy; 2024 PedroNeto. All rights reserved.</p>
-        
+            <div class="footer-section footer-links">
+                <h3>Get in Touch</h3>
+                <ul>
+                    <li><a href="#">Boondhere, Mogadishu</a></li>
+                    <li><a href="#">+252 61 705 5988</a></li>
+                    <li><a href="#">nnuurcabdiwali@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 PedroNeto. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="main.js"></script>
 </body>
+
 </html>
